@@ -1,0 +1,84 @@
+*{
+ box-sizing: border-box;
+}
+body{
+ background-image: url(./dt-removebg-preview.png);
+}
+
+.header{
+ display: flex;
+ flex-direction: column;
+ margin:auto;
+ background-color: orange;
+ color:rgb(193,38,56);
+ width: 500px;
+ align-items: center;
+ border: 10px solid #6d2729;
+ border-radius: 10px;
+ margin-bottom: 10px;
+}
+.container{
+ background-image: url(./IMG_6855.jpg);
+ background-size: 100%;
+ background-repeat: no-repeat;
+ border: 10px solid rgb(109,39,41);
+ border-radius: 10px;
+ box-shadow: 3px 5px 5px orange;
+ display: grid;
+ height: 500px;
+ margin: auto;
+ width: 500px;
+}
+.buttondiv{
+ background-color: #6d2729;
+ border: 10px solid orange;
+ border-radius: 10px;
+ display:flex;
+ flex-direction: row;
+ gap: 5px;
+ justify-content: center;
+ margin: auto;
+ margin-top: 10px;
+ padding: 10px 0px 10px 0px;
+ width: 500px;
+}
+
+.inputdiv{
+ text-align: center;
+ background-color: #6d2729;
+ border: 10px solid orange;
+ border-radius: 10px;
+ margin: auto;
+ margin-top: 10px;
+ padding-bottom: 10px;
+ padding-top: 10px;
+ width: 500px;
+ color:whitesmoke
+}
+
+button{
+ background-color:rgb(193,38,56);
+ color: white;
+ width:60px
+}
+.youtube{
+ position:absolute;
+ z-index: 1000;
+ top: 20px;
+ left: 20px;
+}
+@keyframes append-animate {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;	
+	}
+}
+
+/* animate new box */
+.newbox {
+	animation: append-animate .7s linear;
+}

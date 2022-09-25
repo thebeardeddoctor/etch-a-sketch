@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> <!-- 'nano' theme -->
+ <link rel="stylesheet" href="style.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Etch-A-Sketch</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Luka and Daniels Etch-A-Sketch</h1>
+    <h1>Game Mode:</h1>
+  </div>
+  <!-- grid container -->
+  <div class="container"></div>
+  <!-- button section -->
+  <div class="buttondiv">
+      <button onclick="changeColor('black')" class="color" id="black">BLACK</button>
+      <button onclick="changeColor('blue')" class="color" id="black">BLUE</button>
+      <button onclick="changeColor('red')" class="color" id="black">RED</button>
+      <button onclick="changeColor('yellow')" class="color" id="black">Yellow</button>
+      <button onclick="changeColor('white')" class="color" id="orange">WHITE</button>
+      <button onclick="changeColor('random')" class="color" id="random">RANDO</button>
+      <button id="resetbtn"onclick='resetGame()'>RESET</button>
+    </div>
+<!-- board size input will go here -->
+  <div class="inputdiv">Grid Size
+   <button onclick="createGrid(16)" class="sizebtn">16</button>
+   <button onclick="createGrid(32)" class="sizebtn">32</button>
+   <button onclick="createGrid(64)" class="sizebtn">64</button>
+   <button onclick="createGrid(100)" class="sizebtn">100</button>
+  </div>
+  <div class="youtube">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gDSklp-Vdpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
